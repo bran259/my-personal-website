@@ -8,7 +8,7 @@ body{
     background: radial-gradient(circle at left,#2b2d42,#000);
     color: #fff;
     line-height: 1.6;
-    overflow: hidden;
+    overflow: scroll;
 }
 header{
     width: 100%;
@@ -38,12 +38,17 @@ header{
     color: #1e90ff;
     border-bottom: 1px solid #1e90ff;
 }
+.nav-links:hover{
+    color: #000;
+    background: #1e90ff;
+    cursor: pointer;
+}
 .hero{
     display: flex;
    
     justify-content: space-between;
-    padding: 120px 50px 50px;
-    min-height: 100vh;
+    padding: 50px;
+   
 }
 
 .intro{
@@ -74,21 +79,88 @@ header{
 .profile{
     text-align: center;
     
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 200px;
+    
 }
 .profile img{
     width: 120px;
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #333;
+    border: 3px solid #8d0909;
 }
-.footer{
-    text-align: right;
-    padding: 20px 50px;
-    font-size: 114px;
-    color: #ccc;
-    border-top: 1px solid rgba(14, 43, 212, 0.2);
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 50px;
+    min-height: 100vh;
+}
+.about-text{
+    max-width: 50%;
+    padding-left: 40px;
+}
+.about-text h2{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+.line{
+    width: 800px;
+    height: 4px;
+    background: #1e90ff;
+    margin: 15px 15px;
+}
+.about-text p{
+    font-size: 20px;
+    color: #b94f4f;
+}
+.about-text h3{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+.skills span{
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    transition: 0.3s;
+}
+.skills span:hover{
+    color: #000;
+    background: #1e90ff;
+    cursor: pointer;
+}
+footer{
+    background: #0a0a0a;
+    padding: 30px 50px;
+    text-align: center;
+
+}
+.footer-content{
+    max-width: 900px;
+    margin: auto;
+}
+.footer-content p{
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.socials li a{
+    color: #1e90ff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.socials li a:hover{
+    color: #fff;
 }
